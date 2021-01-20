@@ -15,7 +15,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <p onClick={this.flipDropdown}>X</p>
+        <p data-testid="hamburger-button" onClick={this.flipDropdown}>X</p>
         {this.state.showDropdown ? (
           <div className="dropdown" data-testid="dropdown">
             Dropdown menu
